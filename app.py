@@ -277,7 +277,6 @@ col_input, col_output = st.columns([1, 1], gap="large")
 
 # ── LEFT PANEL: Passenger Input ──────────────────────────────────────────────
 with col_input:
-    st.markdown('<div class="panel">', unsafe_allow_html=True)
     st.markdown('<p class="panel-label">Passenger details</p>', unsafe_allow_html=True)
 
     with st.form("prediction_form", clear_on_submit=False):
@@ -318,7 +317,6 @@ with col_input:
 
 # ── RIGHT PANEL: Prediction Output ──────────────────────────────────────────
 with col_output:
-    st.markdown('<div class="panel">', unsafe_allow_html=True)
     st.markdown('<p class="panel-label">Prediction output</p>', unsafe_allow_html=True)
 
     if not submitted:
